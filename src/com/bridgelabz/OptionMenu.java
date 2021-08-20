@@ -7,21 +7,21 @@ import java.util.Scanner;
  */
 public class OptionMenu {
 
-    public void menu() {
+    public void operation() {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         AddOrRemove addOrRemove = new AddOrRemove();
 
         while (true) {
 
-            System.out.println("\nWhat would u like to do? \n" +
-                    "1. Add contact \n" +
-                    "2. Display contact \n" +
-                    "3. Edit contact \n" +
-                    "4. Remove contact \n" +
-                    "0. Exit \n");
+            System.out.println("\nWhat would u like to do with contacts? \n" +
+                    "1. ADD     \n" +
+                    "2. DISPLAY \n" +
+                    "3. EDIT    \n" +
+                    "4. REMOVE  \n" +
+                    "0. EXIT    \n");
 
-            int choice = sc.nextInt();
+            int choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
@@ -33,7 +33,7 @@ public class OptionMenu {
                     break;
 
                 case 3:
-                    addOrRemove.editPerson();
+                   addOrRemove.editPerson();
                     break;
 
                 case 4:
