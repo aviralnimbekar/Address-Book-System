@@ -14,7 +14,7 @@ class AddOrRemove {
     /**
      * Purpose - Adding new contacts into the list
      */
-    public void addPerson() {
+    public ArrayList addPerson() {
 
         System.out.println("Enter following details \n" +
                 "First Name :");
@@ -46,6 +46,7 @@ class AddOrRemove {
         contact.setEmail(email);
 
         contactList.add(contact);
+        return contactList;
     }
 
     /**
@@ -55,8 +56,6 @@ class AddOrRemove {
 
         System.out.println("All contact =  " + contactList.size());
         System.out.println(contactList);
-
-
     }
 
     /**
@@ -69,7 +68,6 @@ class AddOrRemove {
 
         boolean found = false;
         for (Contact contact : contactList) {
-
             if (contact.getFirstName().equals(editName)) {
                 found = true;
                 System.out.println(contact);

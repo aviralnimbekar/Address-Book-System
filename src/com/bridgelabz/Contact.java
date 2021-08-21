@@ -14,7 +14,6 @@ class Contact {
     private long phoneNo;
     private String email;
 
-    //SETTERS
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -47,7 +46,6 @@ class Contact {
         this.email = email;
     }
 
-    //GETTER
     public String getFirstName() {
         return firstName;
     }

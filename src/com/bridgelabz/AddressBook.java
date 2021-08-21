@@ -4,8 +4,8 @@ package com.bridgelabz;
  * Purpose - Simulation of address book program
  *
  * @author - Aviral N
- * @version - 1.2
- * date     - 20-08-2021
+ * @version - 1.3
+ * date     - 21-08-2021
  */
 public class AddressBook {
 
@@ -15,7 +15,7 @@ public class AddressBook {
     public static void main(String[] args) {
         System.out.println("Welcome to Address Book Program");
 
-        OptionMenu option = new OptionMenu();
-        option.operation();
+        MultipleBooks book = new MultipleBooks();
+        book.crateBook();
     }
 }
