@@ -84,15 +84,12 @@ class MultipleBooks {
                     String key = scanner.next();
 
                     if (bookList.containsKey(key)) {
+
                         ArrayList<Contact> existingBook = bookList.get(key);
-
-                        ArrayList clonedArray = (ArrayList) existingBook.clone();
-
                         ArrayList contactList = option.operation();
-
-                        contactList.add(contactList.size(), clonedArray);
-
+                        contactList.add(contactList.size(), existingBook);
                         bookList.put(key, contactList);
+
                     } else {
                         System.out.println("Book not found");
                     }
